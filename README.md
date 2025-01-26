@@ -1,10 +1,9 @@
-# pop-os-postinstall
-Script de post install do Pop!_OS
+# linux-Post-install
+Script de pós instalação para distros baseadas em Ubuntu
 
 
 ## Como usar
 
-Apenas execute o comando abaixo no terminal
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Diolinux/pop-os-postinstall/main/pop-os-postinstall.sh)"
-```
+Acesse a pasta onde baixou o arquivo, clique com o botão direito e dê permissão para execução do arquivo
+Abra o terminar nessa mesma pasta onde está o arquivo e execute o comando abaixo: 
+  $ ./linux-postinstall.sh
