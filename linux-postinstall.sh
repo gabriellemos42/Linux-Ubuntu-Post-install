@@ -100,8 +100,6 @@ flatpak install flathub com.visualstudio.code -y
 flatpak install flathub io.github.diegoivan.pdf_metadata_editor -y
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer -y
 flatpak install flathub com.warlordsoftwares.formatlab -y
-flatpak install flathub org.kde.kstars -y
-flatpak install flathub io.gitlab.theevilskeleton.Upscaler -y
 
 }
 # ------------------------------------------------------------------------ #
