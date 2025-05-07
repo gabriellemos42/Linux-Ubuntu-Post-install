@@ -15,12 +15,6 @@
 # Caso algum comando apresente erro, o Script será interrompido
 set -e
 
-##URLS
-URL_TEAM_VIEWER="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
-
-#DIRETÓRIOS
-DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
-
 #CORES DE EXIBIÇÃO NO TERMINAL
 
 VERMELHO='\e[1;91m'
@@ -30,7 +24,6 @@ SEM_COR='\e[0m'
 #FUNÇÕES
 
 # Atualizaçõa do repositório e do sistema
-
 apt_update(){
     sudo apt update && sudo apt dist-upgrade -y
 }
@@ -68,15 +61,6 @@ just_apt_update () {
 ## Download e instalação dos programas DEB ##
 
 install_debs () {
-    echo -e "${VERDE}[INFO] - Baixando pacotes .deb${SEM_COR}"
-
-    mkdir -p "$DIRETORIO_DOWNLOADS"
-    wget -c "$URL_TEAM_VIEWER"      -P "$DIRETORIO_DOWNLOADS"
-
-    ## Instalação de pacotes .deb baixados acima ##
-    echo -e "${VERDE}[INFO] - Instalando pacotes .deb baixados${SEM_COR}"
-    sudo dpkg -i $DIRETORIO_DOWNLOADS/*.deb
-
     # Instalação de programas no apt
     echo -e "${VERDE}[INFO] - Instalando pacotes direto do Repositório${SEM_COR}"
 
