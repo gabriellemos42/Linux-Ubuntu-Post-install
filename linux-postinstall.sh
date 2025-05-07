@@ -10,6 +10,8 @@
 # Abra o terminar nessa mesma pasta onde está o arquivo e execute o comando abaixo: 
 #   $ ./linux-postinstall.sh
 #
+# Também é possível fazer via terminal, para o exemplo vou usar a pasta Donwloads
+#    chmod +x ~/Downloads/linux-postinstall.sh
 # ----------------------------- VARIÁVEIS ------------------------------- #
 
 # Caso algum comando apresente erro, o Script será interrompido
